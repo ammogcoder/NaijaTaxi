@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.deji_cranium.naijataxi.Home"
+    tools:showIn="@layout/app_bar_home">
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:id="@+id/search_view"
+        android:background="@android:color/white"
+        android:elevation="1dp"
+        app:queryHint="Search for a location"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp">
+
+    </SearchView>
+
+    <com.google.android.gms.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/map_view"
+
+        ></com.google.android.gms.maps.MapView>
+
+
+
+
+</FrameLayout>
